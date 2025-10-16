@@ -11,7 +11,7 @@ pipeline {
                 branches: [[name: '*/master']],
                 userRemoteConfigs: [[
                     url: 'https://github.com/Koll19741981/jenkins.git',
-                    credentialsId: 'GitKoll19741981'
+                    credentialsId: 'Koll19741981-to-use'
                 ]]
               ])
             }

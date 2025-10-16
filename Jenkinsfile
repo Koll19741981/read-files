@@ -5,7 +5,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'cloner le repertoire' 
-                git branch: 'master', url: 'https://github.com:Koll19741981/read-files.git'
+                git branch: 'master', url: 'https://github.com/Koll19741981/read-files.git'
             }   
         }
         

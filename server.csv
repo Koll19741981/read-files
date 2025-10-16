@@ -1,0 +1,5 @@
+nom,ip,ssh,username
+rlcpgsa001,172.12.10.131,22,admaamie
+rlcpgsd001,172.12.10.120,22,postgres
+rlcpgsd002,172.12.10.121,22,postgres
+rlcpgse001,172.12.10.140,4063,stfrlc

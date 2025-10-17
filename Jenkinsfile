@@ -25,7 +25,7 @@ pipeline {
                 //def path= Paths.get("server.csv")
                 script{
 
-                     def lines=readfile("server.csv").split("\n")
+                     def lines = readFile("server.csv").split("\n")
                      lines.eatchwithIndex{line, index -> echo "$line"}
                 }
                

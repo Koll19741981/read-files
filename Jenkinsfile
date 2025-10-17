@@ -20,8 +20,11 @@ pipeline {
         
          stage('test') {
             steps {
-                sh 'ls -al'
-                sh 'cat server.csv'
+                //sh 'ls -al'
+               // sh 'cat server.csv'
+                //def path= Paths.get("server.csv")
+                def lines=readfile("server.csv")
+                lines.eatchwithIndex{line, index -> echo "$line"}
                 
             }
         }

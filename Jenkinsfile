@@ -23,8 +23,12 @@ pipeline {
                 //sh 'ls -al'
                // sh 'cat server.csv'
                 //def path= Paths.get("server.csv")
-                def lines=readfile("server.csv")
-                lines.eatchwithIndex{line, index -> echo "$line"}
+                script{
+
+                     def lines=readfile("server.csv")
+                     lines.eatchwithIndex{line, index -> echo "$line"}
+                }
+               
                 
             }
         }
